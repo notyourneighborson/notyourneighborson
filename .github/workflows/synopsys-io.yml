@@ -1,12 +1,9 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
+curl --request  GET\
+--url"https://api.github.com/app/installations"
 name: Synopsys Intelligent Security Scan
-
-on:
-  push:
+--header "Accept: application/vnd.github.json
+on: Authorization: Bearer JWT"\
+  push: "X-GitHub-Api-Version. 2022-11-28"
     branches: [ "main" ]
   pull_request:
     # The branches below must be a subset of the branches above
